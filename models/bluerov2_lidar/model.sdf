@@ -45,14 +45,14 @@
       <sensor name='gpu_lidar' type='gpu_lidar'>"
         <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
         <topic>lidar</topic>
-        <update_rate>0.2857142857142857</update_rate>
+        <update_rate>0.57142857142</update_rate>
         <ray>
             <scan>
                 <horizontal>
                     <samples>360</samples>
                     <resolution>1</resolution>
-                    <min_angle>-1.57</min_angle>
-                    <max_angle>1.57</max_angle>
+                    <min_angle>-0.7854</min_angle>
+                    <max_angle>0.7854</max_angle>
                 </horizontal>
                 <vertical>
                     <samples>1</samples>
