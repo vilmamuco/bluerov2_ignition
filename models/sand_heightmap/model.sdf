@@ -23,7 +23,7 @@
         <geometry>
           <mesh>
             <scale>0.5 0.5 0.25</scale>
-            <uri>model://sand_heightmap/meshes/sandseabed.dae</uri>
+            <uri>meshes/sandseabed.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -33,7 +33,7 @@
         <geometry>
           <mesh>
             <scale>0.5 0.5 0.25</scale>
-            <uri>model://sand_heightmap/meshes/sandseabed.dae</uri>
+            <uri>meshes/sandseabed.dae</uri>
           </mesh>
         </geometry>
         <material>
