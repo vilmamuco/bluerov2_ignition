@@ -37,14 +37,47 @@
       <enable>bluerov2</enable>
     </plugin>
 
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri>
     </include>
 
-    <include>
+    <!-- <include>
       <uri>model://sand_heightmap</uri>
-      <pose>0 7 -10 0 0 0</pose>
-    </include>
+      <pose>0 0 -14 0 0 0</pose>
+    </include> -->
+
+    <model name="terrain">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>file://terrain.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>file://terrain.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+  </model>
 
     <include>
       <uri>model://bluerov2</uri>
